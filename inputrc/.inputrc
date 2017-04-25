@@ -1,0 +1,22 @@
+set bell-style none
+set completion-ignore-case On
+set colored-stats On
+set show-all-if-ambiguous On
+set skip-completed-text On
+
+TAB: menu-complete
+
+# prepare to type a quoted word --
+# insert open and close double quotes
+# and move to just after the open quote
+"\C-x\"": "\"\"\C-b"
+"\C-x\'": "\'\'\C-b"
+"\C-x(": "()\C-b"
+"\C-x{": "{}\C-b"
+"\C-x[": "[]\C-b"
+"\C-x<": "<>\C-b"
+# Quote the current or previous word
+"\C-xq": "\eb\"\ef\""
+"\C-xQ": "\eb\'\ef\'"
+# Add a binding to refresh the line, which is unbound
+"\C-xr": redraw-current-line

@@ -1,0 +1,60 @@
+
+# Outgoing mail configuration
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set realname="James Vargo"
+set from="vargo.james@gmail.com"
+set envelope_from=yes
+
+#set signature="~/.signature"
+
+# Folders
+set mbox_type=Maildir
+
+set spoolfile="~/mail/inbox/"
+set folder="~/mail/inbox/"
+set mask='!^\.[^.]'
+#set mask =""
+set record="~/mail/sent"
+set postponed="~/mail/drafts"
+set move=no
+
+# Watch these mailboxes for new mail.
+#mailboxes ! '~/bin/mailbox-search.sh'
+mailboxes 'find ~/mail -maxdepth 1 -mindepth 1 \
+  -type d '
+
+set sort_browser=alpha
+
+# Editor of choice
+# The options set textwidth, start at first empty line.
+set editor="vim -c 'set tw=70' '+/^$' "
+set edit_headers=yes
+
+# Printer of choice
+set print_command=lp
+
+# Aliases
+set alias_file=~/.mail/mutt_aliases
+source ~/.mail/mutt_aliases
+set sort_alias=alias
+
+# Miscellaneous
+set markers         # mark wrapped lines of text in the pager with a +
+set smart_wrap      # Don't wrap mid word
+set pager_context=5 # Retain 5 lines of previous page when scrolling
+set status_on_top   # Status bar on top
+push <show-version> # Shows mutt version at startup
+
+auto_view text/html
+
+#macro index,pager \cb "<pipe-message> urlscan<Enter>"
+#macro attach,compose \cb "<pipe-entry> urlscan<Enter>"
+
+macro index,pager \cb "<pipe-message> urlview<Enter>"
+macro index,pager  G "!fetchmail<Enter>"
+
+set pipe_decode
+set forward_quote
+set forward_format="Fwd: %s"
+

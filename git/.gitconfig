@@ -1,0 +1,9 @@
+[user]
+	name = James Vargo
+	email = vargo.james@gmail.com
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[push]
+	default = simple
