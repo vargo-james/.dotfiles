@@ -1,25 +1,31 @@
 #!/bin/sh
 
-script_name=$(basename $0)
+script_name="install.sh"
+cd ~/.dotfiles
 
-silence="1> /dev/null 2>&1"
+dir=$pwd
 
 if [ $# -eq 0 ]; then
   for file in *; do
-    if [ $file != ${script_name} ]; then
-      echo "stow ${file} ${silence}"
+    if [ ${file} != ${script_name} ]; then
+      stow ${file}
     fi
   done
+
+  cp ~/.dotfiles/install.sh ~/bin/install-dotfiles
+
+  cd $dir
   return 0;
 fi
 
-if [ $1 = '-u' ]; then
-  echo "Please update stow"
-  for file in *; do
-    if [ $file != ${script_name} ]; then
-      echo "stow -D ${file} ${silence}"
+if [ "$1" = '-u' ]; then
+  for rmfile in *; do
+    if [ ${rmfile} != ${script_name} ]; then
+      stow -D ${rmfile} ${silence}
     fi
   done
+  rm ~/bin/install-dotfiles
+  cd $dir
   return 0;
 fi
 
