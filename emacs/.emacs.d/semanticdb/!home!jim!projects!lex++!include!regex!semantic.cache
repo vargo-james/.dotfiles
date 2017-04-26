@@ -1,0 +1,317 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_compiler_h_" variable (:constant-flag t) nil [79 91])
+            ("matcher/atomic.h" include nil nil [93 120])
+            ("matcher/alternation.h" include nil nil [121 153])
+            ("matcher/concatenation.h" include nil nil [154 188])
+            ("matcher/matcher.h" include nil nil [189 217])
+            ("matcher/replication.h" include nil nil [218 250])
+            ("matcher/string_literal.h" include nil nil [251 286])
+            ("bracket_reader.h" include nil nil [288 315])
+            ("compiler_impl.h" include nil nil [316 342])
+            ("error_tracker.h" include nil nil [343 369])
+            ("data_structures/optional.h" include nil nil [370 407])
+            ("regex_types.h" include nil nil [408 432])
+            ("data_structures/simple_buffer.h" include nil nil [433 475])
+            ("token_source.h" include nil nil [476 501])
+            ("syntax_option.h" include nil nil [503 529])
+            ("project_assert.h" include nil nil [531 558])
+            ("iterator" include (:system-flag t) nil [559 578])
+            ("utility" include (:system-flag t) nil [579 597])
+            ("vector" include (:system-flag t) nil [598 615])
+            ("lex" type
+               (:members 
+                  ( ("compiler" type
+                       (:template 
+                          ( ("Source" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [704 711])
+                            ("Source::value_type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [733 761])
+                            ("Source::traits_type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [784 813])
+                            ("matcher" variable (:type "int") (reparse-symbol classsubparts) [837 870])
+                            ("traits_type::string_type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [893 927])
+                            ("compiler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :type ("Source" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [940 952])
+                                    ("er" variable
+                                       (:reference 1
+                                        :type ("error_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [953 968])
+                                    ("f" variable (:type ("syntax_option_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [969 990]))                                  
+                                :type ("compiler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [931 1080])
+                            ("compile" function
+                               (:prototype-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("matcher_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1084 1117])
+                            ("private" label nil (reparse-symbol classsubparts) [1120 1128])
+                            ("impl" variable (:type ("compiler_impl" type
+                                 (:template-specifier 
+                                    ( ("Source" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1131 1158]))                          
+                        :superclasses 
+                          ( ("regex_constants" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [634 1782])
+                    ("compile" function
+                       (:parent "compiler"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1861 1925]))                  
+                :type "namespace")
+                nil [617 6098]))          
+      :file "compiler.h"
+      :pointmax 6136
+      :fsize 6135
+      :lastmodtime '(22769 15696 473115 117000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_compiler_h_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "bracket_reader.h"
+      :fsize 760
+      :lastmodtime '(22708 48025 39233 878000))
+    (semanticdb-table "semanticdb-table"
+      :file "compiler_impl.h"
+      :fsize 5997
+      :lastmodtime '(22729 39059 170656 532000))
+    (semanticdb-table "semanticdb-table"
+      :file "error_tracker.h"
+      :fsize 492
+      :lastmodtime '(22694 14167 696762 999000))
+    (semanticdb-table "semanticdb-table"
+      :file "token_source.h"
+      :fsize 2632
+      :lastmodtime '(22729 39059 186656 519000))
+    (semanticdb-table "semanticdb-table"
+      :file "syntax_option.h"
+      :fsize 709
+      :lastmodtime '(22674 29013 42816 315000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_bracket_interpreter_h_" variable (:constant-flag t) nil [41 64])
+            ("data_structures/optional.h" include nil nil [66 103])
+            ("regex_token.h" include nil nil [104 128])
+            ("regex_types.h" include nil nil [129 153])
+            ("data_structures/simple_buffer.h" include nil nil [154 196])
+            ("character_interpreter.h" include nil nil [197 231])
+            ("project_assert.h" include nil nil [233 260])
+            ("lex" type
+               (:members 
+                  ( ("bracket_interpreter" type
+                       (:template 
+                          ( ("Source" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [360 367])
+                            ("Source::value_type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [388 416])
+                            ("Source::traits_type" variable
+                               (:typemodifiers ("typename")
+                                :type "int")
+                                (reparse-symbol classsubparts) [439 468])
+                            ("regex_token" variable (:type "int") (reparse-symbol classsubparts) [490 526])
+                            ("bracket_interpreter" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :type ("Source" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [550 562])
+                                    ("ec" variable
+                                       (:reference 1
+                                        :type ("error_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [563 578])
+                                    ("syntax" variable (:type ("syntax_option_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [579 605]))                                  
+                                :type ("bracket_interpreter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [530 688])
+                            ("empty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [692 740])
+                            ("get" function
+                               (:prototype-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("value_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [744 771])
+                            ("private" label nil (reparse-symbol classsubparts) [774 782])
+                            ("interpreter" variable (:type ("character_interpreter" type
+                                 (:template-specifier 
+                                    ( ("Source" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [785 827])
+                            ("tracker" variable (:type ("error_tracker" type (:type "class") nil nil)) (reparse-symbol classsubparts) [830 852])
+                            ("context_" variable (:type ("bracket_context" type
+                                 (:prototype t
+                                  :type "enum")
+                                  nil nil)) (reparse-symbol classsubparts) [855 973])
+                            ("bracket_context" type
+                               (:members 
+                                  ( ("first_char" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [882 893])
+                                    ("after_negation" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [894 909])
+                                    ("element" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [910 918])
+                                    ("element_or_dash" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [919 935])
+                                    ("after_dash" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [936 950]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [855 973])
+                            ("buffer" variable (:type ("simple_buffer" type
+                                 (:template-specifier 
+                                    ( ("value_type" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [976 1009])
+                            ("get_in_context" function
+                               (:prototype-flag t
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("value_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1013 1051])
+                            ("update_context" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1074 1090]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1054 1091])
+                            ("check_if_empty" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1095 1117])
+                            ("filter_get" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("typeA" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1152 1169])
+                                    ("typeB" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1170 1187])
+                                    ("typeC" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1195 1212]))                                  
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("value_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1120 1213])
+                            ("filter_get" function
+                               (:arguments 
+                                  ( ("typeA" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1248 1265])
+                                    ("typeB" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1266 1283]))                                  
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("value_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1216 1333])
+                            ("filter_get" function
+                               (:arguments 
+                                  ( ("type" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1368 1384]))                                  
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("value_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1336 1424]))                          
+                        :superclasses 
+                          ( ("regex_constants" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [279 1427])
+                    ("get" function
+                       (:parent "bracket_interpreter"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1515 1966])
+                    ("get_in_context" function
+                       (:parent "bracket_interpreter"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2055 2668])
+                    ("update_context" function
+                       (:template 
+                          ( ("Source" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("type" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2746 2762]))                          
+                        :parent "bracket_interpreter")
+                        (reparse-symbol namespacesubparts) [2670 3282])
+                    ("filter_get" function
+                       (:parent "bracket_interpreter"
+                        :arguments 
+                          ( ("typeA" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3410 3427])
+                            ("typeB" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3428 3445])
+                            ("typeC" variable (:type ("token_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3451 3468]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3370 3687])
+                    ("check_if_empty" function
+                       (:template 
+                          ( ("Source" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :parent "bracket_interpreter")
+                        (reparse-symbol namespacesubparts) [3689 3884]))                  
+                :type "namespace")
+                nil [262 3886]))          
+      :file "bracket_interpreter.h"
+      :pointmax 3935
+      :fsize 3934
+      :lastmodtime '(22729 39059 166656 539000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_bracket_interpreter_h_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "regex_token.h"
+      :fsize 2210
+      :lastmodtime '(22692 53479 467324 978000))
+    (semanticdb-table "semanticdb-table"
+      :file "character_interpreter.h"
+      :fsize 5469
+      :lastmodtime '(22708 45305 481616 354000)))
+  :file "!home!jim!projects!lex++!include!regex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

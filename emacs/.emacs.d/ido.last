@@ -1,0 +1,28 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jim/Projects/" . "any_iterator/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jim/Projects/any_iterator/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "IteratorTypeErasure.zip"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jim/Projects/any_iterator/" (22702 12076 253134 279000) "./" "IteratorTypeErasure.zip" "IteratorTypeErasure/" "../")
+
+ ("/home/jim/Projects/" (22733 26312 463481 37000) "assembly/" "database/" "make-anything/" "plcg/" "compiler_tests/" "javascript/" "lazy_array/" "computer-builder/" "code_counter/" "library_testing/" "memory_quiz/" "./" "cpp_lib/" "dos/" "problem_solving/" "easy-test/" "codejam/" "plans.txt" "language_practice/" "sed/" "Dbox" "crenshaw/" "c/" "scripts/" "any_iterator/" "compiler/" "Practice_Document" "java/" "build-qt-hello-Desktop_Qt_5_6_0_GCC_64bit-Debug/" "machine_learning/" "giftideas" "kokopelli/" "algorithms/" "qt-hello/" "calc/" "geometry/" "haskell/" "lex-plus-plus/" "website_test/" "temp_lib/" "../" "python/")
+
+ ("/home/jim/" (22737 22285 394695 716000) ".bashrc~" ".xsession-errors" "Desktop/" ".dbus/" ".mail/" ".python_history" ".scidvspc/" "newdoc.txt" ".procmail/" "test.cpp" ".viminfo" ".lesshst" "scid_vs_pc-4.9/" "test.sh" "bin/" ".gstreamer-0.10/" ".pki/" "./" ".muttrc" ".inputrc" ".cache/" "Videos/" "src/" ".ICEauthority" "sonnet" ".gimp-2.8/" ".bash_history" "scid_vs_pc-4.9.tgz" ".tracks" "Projects/" "Templates/" ".mail-logs/" ".profile" "TODO" ".bash_logout" ".thumbnails/" "mailstuff" ".gitconfig" "OregontoCArestaurants.odt" "configs/" ".config/" "test" "mail/" "Downloads/" "How-to-Learn-Emacs8.png" "Documents/" ".emacs" ".swo" "mutt-manual" "youtube-playlist.sh" ".local/" ".bash_aliases" "Public/" "rei return.odt" "Music/" ".dosbox/" ".bashrc" ".xsessionrc" ".vimrc" ".Xauthority" "tillamook-restaurants.odt" ".msmtprc" ".mailcap" "gsl_temp/" ".dmrc" ".fetchmailrc" ".procmailrc" ".bash_aliases~" "Jim-job-stuff/" ".hardinfo/" ".swp" ".gnupg/" ".emacs.d/" "Pictures/" ".xmobarrc" ".xscreensaver" ".mozilla/" ".emacs~" ".vim/" "jg1012016.odt" ".gnome/" ".gconf/" ".ghc/" ".certs/" "../" ".xsession-errors.old" "JamJarLabels.pdf" "Qt/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

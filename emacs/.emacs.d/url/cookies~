@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".nytimes.com"
+  [url-cookie "nyt-a" "4eb12683a2b64721dec4cf0044527b557c55f0cc7a11e87fa211b43228170881" "Sat, 24 Mar 2018 16:50:00 GMT" "/" ".nytimes.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

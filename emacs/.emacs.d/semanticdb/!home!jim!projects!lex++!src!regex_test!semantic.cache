@@ -1,0 +1,133 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("regex/regex.h" include nil nil [27 51])
+            ("ttest/ttest.h" include nil nil [52 76])
+            ("bracket_test.h" include nil nil [78 103])
+            ("bracket_list_test.h" include nil nil [104 134])
+            ("regex" include (:system-flag t) nil [136 152])
+            ("string" include (:system-flag t) nil [153 170])
+            ("iostream" include (:system-flag t) nil [172 191])
+            ("lex" using (:type ("lex" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [193 213])
+            ("size_display" function
+               (:arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [233 255]))                  
+                :type "void")
+                nil [215 1911])
+            ("regex_match_test" function
+               (:arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1935 1957]))                  
+                :type "void")
+                nil [1913 2728])
+            ("regex_test" function
+               (:arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2746 2768]))                  
+                :type "void")
+                nil [2730 3177])
+            ("create_regex_test" function (:type ("ttest::test_suite::pointer" type (:type "class") nil nil)) nil [3179 3445]))          
+      :file "regex_test.cpp"
+      :pointmax 3446
+      :fsize 3445
+      :lastmodtime '(22769 22405 688124 526000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_bracket_test_h_" variable (:constant-flag t) nil [34 50])
+            ("ttest/ttest.h" include nil nil [52 76])
+            ("singleton_bracket_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106 128]))                  
+                :type "void")
+                nil [78 129])
+            ("close_dash_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151 173]))                  
+                :type "void")
+                nil [130 174])
+            ("range_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [191 213]))                  
+                :type "void")
+                nil [175 214])
+            ("create_bracket_test" function
+               (:typemodifiers ("inline")
+                :type ("ttest::test_suite::pointer" type (:type "class") nil nil))
+                nil [216 489]))          
+      :file "bracket_test.h"
+      :pointmax 516
+      :fsize 515
+      :lastmodtime '(22704 40533 521703 533000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_bracket_test_h_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_bracket_list_test_h_" variable (:constant-flag t) nil [39 60])
+            ("ttest/ttest.h" include nil nil [62 86])
+            ("matching_bracket_list_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120 142]))                  
+                :type "void")
+                nil [88 143])
+            ("non_matching_bracket_list_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("log" variable
+                       (:reference 1
+                        :type ("ttest::error_log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [180 202]))                  
+                :type "void")
+                nil [144 203])
+            ("create_bracket_list_test" function
+               (:typemodifiers ("inline")
+                :type ("ttest::test_suite::pointer" type (:type "class") nil nil))
+                nil [205 467]))          
+      :file "bracket_list_test.h"
+      :pointmax 499
+      :fsize 498
+      :lastmodtime '(22704 40533 517703 520000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_bracket_list_test_h_")
+          )
+))
+  :file "!home!jim!projects!lex++!src!regex_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

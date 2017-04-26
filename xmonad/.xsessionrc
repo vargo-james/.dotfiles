@@ -1,0 +1,26 @@
+# Set up an icon tray
+stalonetray &
+
+# Turn off system bell
+xset b off
+
+# Fire up apps
+
+xscreensaver -no-splash &
+
+# Load background image
+safe
+
+# Udiskie will automount removable media
+udiskie &
+
+# Get the power manager in the systray
+xfce4-power-manager &
+
+if [ -x /usr/bin/nm-applet ] ; then
+   nm-applet --sm-disable &
+fi
+
+. "${HOME}/.bash_profile"
+
+exec xmonad
