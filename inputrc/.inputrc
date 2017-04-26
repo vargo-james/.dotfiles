@@ -9,14 +9,22 @@ TAB: menu-complete
 # prepare to type a quoted word --
 # insert open and close double quotes
 # and move to just after the open quote
-"\C-x\"": "\"\"\C-b"
-"\C-x\'": "\'\'\C-b"
-"\C-x(": "()\C-b"
-"\C-x{": "{}\C-b"
-"\C-x[": "[]\C-b"
-"\C-x<": "<>\C-b"
+"\C-;\"": "\"\"\C-b"
+"\C-;\'": "\'\'\C-b"
+"\C-;(": "()\C-b"
+"\C-;{": "{}\C-b"
+"\C-;[": "[]\C-b"
+"\C-;<": "<>\C-b"
 # Quote the current or previous word
 "\C-xq": "\eb\"\ef\""
 "\C-xQ": "\eb\'\ef\'"
 # Add a binding to refresh the line, which is unbound
 "\C-xr": redraw-current-line
+
+# This binding refreshes the dotfiles
+"\C-xd": "dotify\n"
+"\C-x\C-d": "dotify -u\n"
+
+# This inserts a call the the clipboard
+"\C-V": "$(xsel --clipboard)"
+

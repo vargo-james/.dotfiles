@@ -24,7 +24,7 @@ if [ "$1" = '-u' ]; then
       stow -D ${rmfile} ${silence}
     fi
   done
-  rm ~/bin/install-dotfiles
+  rm ~/bin/dotify
   cd $dir
   return 0;
 fi
