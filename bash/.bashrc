@@ -54,34 +54,26 @@ if [ -n "$force_color_prompt" ]; then
   fi
 fi
 
+declare -A colors
+colors=([Black]='\[\033[00;30m\]' [Red]='\[\033[00;31m\]' \
+  [Green]='\[\033[00;32m\]' [Brown]='\[\033[00;33m\]' \
+  [Blue]='\[\033[00;34m\]' [Purple]='\[\033[00;35m\]' \
+  [Cyan]='\[\033[00;36m\]' [grey]='\[\033[00;37m\]' \
+  [Grey]='\[\033[01;30m\]' [red]='\[\033[01;31m\]' \
+  [green]='\[\033[01;32m\]' [Yellow]='\[\033[01;33m\]' \
+  [blue]='\[\033[01;34m\]' [purple]='\[\033[01;35m\]' \
+  [cyan]='\[\033[01;36m\]' [cream]='\[\033[01;37m\]' \
+  [blank]='\[\033[00m\]')
 
-# Black='\[\033[00;30m\]'
-# Red='\[\033[00;31m\]'
-# Green='\[\033[00;32m\]'
-# Brown='\[\033[00;33m\]'
-# Blue='\[\033[00;34m\]'
-# Purple='\[\033[00;35m\]'
-# Cyan='\[\033[00;36m\]'
-# grey='\[\033[00;37m\]'
-# 
-# Grey='\[\033[01;30m\]'
-red='\[\033[01;31m\]'
-green='\[\033[01;32m\]'
-# Yellow='\[\033[01;33m\]'
-# blue='\[\033[01;34m\]'
-# purple='\[\033[01;35m\]'
-# cyan='\[\033[01;36m\]'
-cream='\[\033[01;37m\]'
-blank='\[\033[00m\]'
-colorized_prompt="${green}\\u@\\h${cream}:${red}\\w${cream}\\$ ${cream}" 
-unset red green white blank
+colorized_prompt="${colors[green]}\\u@\\h${colors[cream]}:${colors[blue]}"
+colorized_prompt="${colorized_prompt}\\w${colors[cream]}\\$ ${colors[cream]}" 
 plain_prompt="\u@\h:\w\$ "
 if [ "$color_prompt" = yes ]; then
   PS1="${debian_chroot:+($debian_chroot)}${colorized_prompt}"
 else
   PS1="${debian_chroot:+($debian_chroot)}${plain_prompt}"
 fi
-unset color_prompt force_color_prompt colorized_prompt plain_prompt
+unset color_prompt force_color_prompt colorized_prompt plain_prompt colors
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then

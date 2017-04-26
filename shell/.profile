@@ -35,6 +35,8 @@ export EDITOR
 BROWSER='/usr/bin/firefox'
 export BROWSER
 
+export GDK_USE_XFT=1
+
 #Default home page for lynx
 WWW_HOME='http://www.google.com/'
 export WWW_HOME

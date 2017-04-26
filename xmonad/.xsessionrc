@@ -3,6 +3,8 @@ stalonetray &
 
 # Turn off system bell
 xset b off
+# Add fonts
+xset fp+ /home/jim/.fonts
 
 # Fire up apps
 
