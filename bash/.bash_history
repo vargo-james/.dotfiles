@@ -770,3 +770,93 @@ ls -a
 git rm .xmobarrc.broken 
 git status
 git commit -m 'removed broken xmobarrc'
+ls
+cd .dotfiles/
+vim install.sh 
+mv ~/bin/install-dotfiles ~/bin/dotify
+vim inputrc/.inputrc 
+man bash
+fg
+./install.sh 
+dotify
+dotify -u
+vim bash/.bashrc 
+dotify
+vim bash/.bashrc
+vim inputrc/.inputrc 
+dotify
+dotify -u
+dotify
+vim inputrc/.inputrc 
+dotify
+git add --all
+git status
+git commit -m 'Added [un]dotify and paste shortcuts to inputrc'
+cd
+ls -a
+mkdir .dotfiles/emacs
+mv .emacs .dotfiles/emacs/
+mv .emacs.d .dotfiles/emacs/
+dotify
+ls -a
+rm .emacs~
+ls .dotfiles
+mkdir .dotfiles/xmonad
+mv .xsessionrc .dotfiles/xmonad/
+mv .xmonad .dotfiles/xmonad/
+cd .dotfiles/
+git add --all
+git status
+git commit
+dotify
+cd
+ls
+ls -a
+less .viminfo
+mv .viminfo .dotfiles/vim
+dotify
+ls -a
+rm .profile~ 
+ls -a
+mkdir .dotfiles/python
+mv .python_history .dotfiles/python/
+ls .pip
+less .pip/pip.log
+ls .pki
+ls .pki/nssdb/pkcs11.txt 
+less .pki/nssdb/pkcs11.txt 
+ls .mail/
+less .mail/mutt_aliases 
+ls .ssh
+less .ssh/known_hosts 
+ls .vim
+mv .vim .dotfiles/vim
+ls -a
+mv .bash_history .dotfiles/bash
+less .mailcap
+less .Xauthority 
+less .xscreensaver
+cd .dotfiles/
+git add --all
+git commit -m 'added more config files'
+dotify
+cd
+ls
+ls -a
+rm .xsessionrc.bck
+cd configs/
+ls
+cd
+rmdir configs
+cd configs/
+ls -a
+less .muttrc
+less ../.muttrc
+less .xsessionrc
+cd ..
+ls
+ls -a
+less configs/.muttrc 
+exit
+vim .dotfiles/stalonetray/.stalonetrayrc 
+fg
