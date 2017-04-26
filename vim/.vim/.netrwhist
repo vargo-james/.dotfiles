@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/jim/.procmail'
 let g:netrw_dirhist_2='/home/jim/Projects/token_iterator/matcher'
 let g:netrw_dirhist_3='/home/jim/Projects/token_iterator/matcher_test'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/jim/Projects/token_iterator/ttest'
 let g:netrw_dirhist_6='/home/jim'
 let g:netrw_dirhist_7='/home/jim/Projects/lex-plus-plus'
 let g:netrw_dirhist_8='/home/jim/Projects/lex-plus-plus/src'
+let g:netrw_dirhist_9='/home/jim/.dotfiles/xmonad'

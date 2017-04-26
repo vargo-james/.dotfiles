@@ -1,9 +1,9 @@
-Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*",
+Config { font = "xft:ProFont:size=12",
   borderColor = "black",
   border = TopB,
   bgColor = "black",
   fgColor = "grey",
-  position = BottomW L 100,
+  position = TopW L 100,
   commands = [ Run Network "wlan0" ["-t","<dev>: <rx> KB, <tx> KB"] 10
                  , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                  , Run Memory ["-t","Mem: <usedratio>%"] 10

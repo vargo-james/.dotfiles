@@ -65,8 +65,8 @@ colors=([Black]='\[\033[00;30m\]' [Red]='\[\033[00;31m\]' \
   [cyan]='\[\033[01;36m\]' [cream]='\[\033[01;37m\]' \
   [blank]='\[\033[00m\]')
 
-colorized_prompt="${colors[green]}\\u@\\h${colors[cream]}:${colors[blue]}"
-colorized_prompt="${colorized_prompt}\\w${colors[cream]}\\$ ${colors[cream]}" 
+colorized_prompt="${colors[blank]}\\u@\\h${colors[blank]}:${colors[blank]}"
+colorized_prompt="${colorized_prompt}\\w${colors[blank]}\\$ ${colors[blank]}" 
 plain_prompt="\u@\h:\w\$ "
 if [ "$color_prompt" = yes ]; then
   PS1="${debian_chroot:+($debian_chroot)}${colorized_prompt}"
