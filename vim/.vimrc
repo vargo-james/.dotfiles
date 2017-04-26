@@ -11,6 +11,7 @@ set tabstop=2
 set shiftwidth=2
 "Set the line width to 79 characters
 set colorcolumn=80
+highlight ColorColumn ctermbg=green
 
 "The following command makes it possible to switch buffers without writing
 set hidden
