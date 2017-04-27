@@ -1,6 +1,7 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Layout.Spacing
 import XMonad.Util.Run
 import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Prompt
@@ -36,6 +37,12 @@ myLogHook handle = dynamicLogWithPP xmobarPP {
                 xmobarColor myTitleColor "" . shorten myTitleMaxLength
             }
 
+-- Window padding
+padding = 10
+
+-- Layout Hook
+myLayoutHook config = avoidStruts $ (spacing padding $ layoutHook config)
+
 
 main = do
   xmproc <- spawnPipe "xmobar"
@@ -43,7 +50,8 @@ main = do
   xmonad $ defaultConfig { 
     -- hooks
     manageHook = manageDocks <+> manageHook defaultConfig,
-    layoutHook = avoidStruts  $  layoutHook defaultConfig,
+    layoutHook = myLayoutHook defaultConfig,
+    --layoutHook = spacing padding $ (avoidStruts  $ layoutHook defaultConfig),
     logHook = myLogHook xmproc,
     -- Rebind the mod key to the super key
     modMask = mod4Mask,

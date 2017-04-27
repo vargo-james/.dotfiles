@@ -160,3 +160,87 @@ man xset
 aptitude search scrot
 su
 exit
+man scrot
+scrot
+ls
+rm 2017-04-27-122229_1920x1080_scrot.png 
+less .bash_aliases 
+less .bashrc
+ls
+aptitude show iwlib
+aptitude search iwlib
+apt-cache search iwlib
+cd /sys/class/power_supply/
+ls
+cd
+vim .dotfiles/xmonad/.xsessionrc 
+xfce4-power-manager --customize
+man xfce4-power-manager-settings 
+cd .dotfiles/
+git add --all
+git status
+git commit -m 'xmonad changes'
+dotify 
+top
+exit
+fg
+exit
+dm-tool switch-to-greeter
+/clock
+dm-tool switch-to-greeter
+su
+clear
+dm-tool switch-to-greeter
+;
+dm-tool switch-to-greeter
+ls /usr/share/icons/LightDM
+gtk-launch fg
+clear
+cd .wallpaper/curves/
+ls h*
+feh halena3
+fg
+ls
+clear
+feh ha*
+feh hal*
+rm halena1 
+ls
+cd ..
+ls
+ls ~/Pictures/
+ls
+mkdir ~/.extras
+mv curves ~/.extras/
+mv film ~/.extras/
+feh comp-icon.jpg 
+rm comp-icon.jpg 
+ls -l dm-background 
+ls
+ps 
+ps -e | grep random
+safe
+random-slides ../.extras/curves/
+cd ../.extras/curves/
+feh tris*
+feh janel*
+cd
+clear
+cd .dotfiles/xmonad/
+ls
+ls -a
+cd .xmonad/
+vim xmonad.hs 
+aptitude show dzen
+help dzen
+fg
+exit
+fg
+exit
+top
+clear
+exit
+cd .dotfiles/
+cd
+vim .dotfiles/xmonad/.xmonad/xmonad.hs 
+exit

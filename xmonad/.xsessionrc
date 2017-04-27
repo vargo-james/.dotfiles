@@ -19,6 +19,7 @@ udiskie &
 # Get the power manager in the systray
 xfce4-power-manager &
 
+# The networking applet attached to stalonetray
 if [ -x /usr/bin/nm-applet ] ; then
    nm-applet --sm-disable &
 fi
