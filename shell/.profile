@@ -28,18 +28,15 @@ export LIBRARY_PATH='/usr/local/boost_1_60_0/stage/lib':$LIBRARY_PATH
 export LD_LIBRARY_PATH='/usr/local/lib64':$LD_LIBRARY_PATH
 
 #Default editor
-EDITOR='/usr/bin/editor'
-export EDITOR
+export EDITOR='/usr/bin/editor'
 
 #Default browser
-BROWSER='/usr/bin/firefox'
-export BROWSER
+export BROWSER='/usr/bin/firefox-esr'
 
 export GDK_USE_XFT=1
 
 #Default home page for lynx
-WWW_HOME='http://www.google.com/'
-export WWW_HOME
+export WWW_HOME='http://www.google.com/'
 
 #The next setting disables the beep in the tty, and it does not emit the
 #error message in other terminal programs.

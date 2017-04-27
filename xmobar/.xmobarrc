@@ -1,20 +1,29 @@
 Config { font = "xft:White Rabbit:size=12",
-  borderColor = "black",
-  border = TopB,
+  border = NoBorder,
   bgColor = "black",
-  fgColor = "grey",
+  fgColor = "purple",
   position = TopW L 100,
-  commands = [ Run Network "wlan0" ["-t","<dev>: <rx> KB, <tx> KB"] 10
-                 , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
-                 , Run Memory ["-t","Mem: <usedratio>%"] 10
-                 , Run Swap [] 10
-                 , Run Date "%a %b %_d %H:%M" "date" 600
-                 , Run StdinReader
-               ],
+  commands = [ 
+    Run Network "wlan0" ["-t","<dev>: <rx> KB, <tx> KB"] 10,
+    Run Cpu [
+      "-t", "Cpu:<total>%", "-p", "3", "-L", "3", "-H", "50",
+      "--normal","green","--high","red"
+    ] 10,
+    Run Memory ["-t","Mem:<usedratio>%", "-p", "3"] 10,
+    Run Swap ["-t", "Swap:<usedratio>%", "-p", "2"] 10,
+    Run Date "%a %b %_d %H:%M" "date" 600,
+    Run BatteryP ["BAT0"] [
+      "-t", "<acstatus>",
+      "-L", "15", "-H", "80",
+      "-l", "red", "-h", "green",
+      "--", "-O", "Charging", "-o", "Battery: <left>% / <timeleft>"
+    ] 60,
+    Run StdinReader
+  ],
   sepChar = "%",
   alignSep = "}{",
   template = "%StdinReader% | %cpu% | %memory% * %swap% | %wlan0% }\
-                \{ <fc=#ee9a00>%date%</fc>"
+                \{ %battery% | %date%"
 }
 
 

@@ -1,1 +1,1 @@
-("~/projects/lex++/" "/usr/local/gcc-6.3-build/prev-x86_64-pc-linux-gnu/32/libstdc++-v3/")
+("~/.dotfiles/" "~/projects/lex++/" "/usr/local/gcc-6.3-build/prev-x86_64-pc-linux-gnu/32/libstdc++-v3/")
