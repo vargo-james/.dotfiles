@@ -20,3 +20,10 @@ If you would like to uninstall the symlinks, you can do so by passing the -u
 option to install.sh. Stow keeps track of the symlinks that it has deposited,
 and it will remove them.
 
+
+Manual Installation:
+
+For each subdirectory, call stow if you would like to use its configuration
+files. For example, "stow bash" will copy symlinks for all files in that 
+subdirectory, (.bashrc and .bash_profile). To uninstall them later, call 
+"stow -D".
