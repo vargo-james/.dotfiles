@@ -11,7 +11,7 @@ xset fp+ /home/jim/.fonts
 xscreensaver -no-splash &
 
 # Load background image
-safe
+~/bin/default-bg
 
 # Udiskie will automount removable media
 udiskie &

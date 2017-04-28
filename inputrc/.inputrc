@@ -28,3 +28,9 @@ TAB: menu-complete
 # This inserts a call the the clipboard
 "\C-V": "$(xsel --clipboard)"
 
+"\C-xgaa": "git add --all\n"
+"\C-xgac": "git commit -a -m ''\C-b"
+"\C-xgc": "git commit -m ''\C-b"
+"\C-xgp": "git push origin master\n"
+"\C-xgg": "git pull\n"
+"\C-xgs": "git status\n"

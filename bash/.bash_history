@@ -244,3 +244,155 @@ cd .dotfiles/
 cd
 vim .dotfiles/xmonad/.xmonad/xmonad.hs 
 exit
+vim .dotfiles/xmonad/.xmonad/xmonad.hs
+cd .dotfiles/
+git add --all
+git status
+git commit -m '
+git commit -m 'xmonad changes'
+exit
+dm-tool switch-to-greeter
+exit
+man feh
+exit
+otip
+top
+clear
+manfeh
+man feh
+feh -F --zoom fill .extras/curves/
+man feh
+feh -F .extras/curves/
+man feh
+feh -e "White Rabbit" -F .extras/curves/
+feh -F --zoom auto  .extras/curves/
+man feh
+feh -F --auto-zoom  .extras/curves/
+man feh
+feh -F --auto-zoom -D 5 .extras/curves/
+feh -F --auto-zoom -D 5 --randomize .extras/curves/
+exit
+exit
+cd Downloads/
+ls
+ls -1
+cd
+update-flash 
+cd Downloads/
+ls
+ls ~/lib
+ls -l
+mv Evi\ Nemeth\,\ Garth\ Snyder\,\ Trent\ R.\ Hein\ -\ UNIX\ and\ Linux\ System\ Administration\ Handbook\,\ 4th\ Edition\ -\ 2010.pdf ~/computing/UNIX-handbook.pdf
+ls
+cd ../lib
+ls
+clear
+ls
+ls -l
+find / -path '*flash*'
+clear
+su
+exit
+echo 'feh -F --auto-zoom -D 5 --randomize .extras/curves/'
+man mkfifo
+ls /temp
+ls /var
+ls /var/tmp
+ls /var/tmp | wc
+clear
+ls /
+cd /run/jim
+cd /run
+ls
+cd user
+ls
+cd ..
+ls -l
+echo #USERID
+echo #ID
+echo $USER
+echo $USERID
+echo $USER_ID
+cd user
+ls -l
+cd 1000
+ls
+id
+$id
+echo $id
+echo $ID
+echo $UID
+mkfifo /run/user/${UID}/clip
+echo 'feh -F --auto-zoom -D 5 --randomize .extras/curves/' > /run/user/${UID}/clip
+ls
+rm clip
+ls
+cd
+clear
+cp /usr/local/bin/safe bin/default-bg
+ls bin
+less bin/update-flash 
+man tar
+vim bin/update-flash 
+update-flash 
+vim bin/update-flash 
+exit
+cd .dotfiles/xmonad/.xmonad
+vim xmonad.hs 
+exit
+exity
+exit
+ghci
+ghci -package readline
+man ghci
+ghci -package-name readline
+exit
+ls
+cd .dotfiles/vim/
+ls
+ls -a
+cd .vim
+ls
+cd ftplugin/
+ls
+cd ../colors
+man vim
+man scrot
+man xsetroot
+man clear
+clear
+cd
+ghci
+clear
+man scrot
+clear
+ls
+feh 2017-04-28-122052_938x1041_scrot.png 
+clear
+feh 2017-04-28-122052_938x1041_scrot.png 
+exit
+ls
+feh 2017-04-28-122052_938x1041_scrot.png 
+rm 2017-04-28-122052_938x1041_scrot.png 
+feh 2017-04-28-131814_1918x1061_scrot.png 
+mv 2017-04-28-131814_1918x1061_scrot.png .wallpaper/numbers.png
+cd .wallpaper/
+ls
+vim ../.dotfiles/xmonad/.xsessionrc 
+fg
+vim ~/bin/default-bg 
+ghci
+ghci
+cd .dotfiles/xmonad/.xmonad/
+vim xmonad.hs
+vim /bin/default-bg
+ls /bin
+ls
+vim bin/default-bg 
+feh --bg-fill .wallpaper/numbers.png 
+vim .dotfiles/xmonad/.xsessionrc 
+default-bg 
+vim bin/default-bg 
+exit
+chmod a+x bin/crazy-bg 
+crazy-bg 

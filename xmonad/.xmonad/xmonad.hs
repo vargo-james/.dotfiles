@@ -9,6 +9,7 @@ import XMonad.Actions.Search
 import System.IO
 
 myFocusedBorderColor = "#00AA00" -- Green
+myNormalBorderColor = "#000000" -- Black
 
 -- Apps
 myWebBrowser = "firefox-esr"
@@ -16,6 +17,8 @@ private = "-private-window"
 myEmacs = "emacs"
 -- Screenshot
 makeScreenShot = "scrot"
+makeWindowScreenShot = "scrot -u"
+
 -- Lock and turn off the screen.
 myLockCommand = "xscreensaver-command -lock; xset dpms force off"
 -- Volume Commands
@@ -25,23 +28,26 @@ myUnmute = setVolume ++ "unmute"
 myRaiseVolume = setVolume ++ "10%+"
 myLowerVolume = setVolume ++ "10%-"
 -- Background
-resetBackground = "safe"
-slideShow = "random-slides ~/.extras/curves"
+resetBackground = "default-bg"
+crazyBackground = "crazy-bg"
+backgroundSlideShow = "random-slides ~/.extras/curves"
+windowedSlideShow = "feh -F --auto-zoom -D 5 --randomize ~/.extras/curves/"
 
 -- Hooks
-myTitleColor = "green"
-myTitleMaxLength = 30
 myLogHook handle = dynamicLogWithPP xmobarPP {
-              ppOutput = hPutStrLn handle,
-              ppTitle  = 
-                xmobarColor myTitleColor "" . shorten myTitleMaxLength
-            }
+    ppSep = " | ",
+    ppOutput = hPutStrLn handle,
+    ppOrder = \(ws:_:t:_) -> [ws,t],
+    ppTitle  = 
+      xmobarColor myTitleColor "" . shorten myTitleMaxLength
+  }
+  where myTitleColor = "green"
+        myTitleMaxLength = 30
 
 -- Window padding
-padding = 10
-
 -- Layout Hook
-myLayoutHook config = avoidStruts $ (spacing padding $ layoutHook config)
+myLayoutHook = avoidStruts . spacing padding . layoutHook
+  where padding = 15
 
 
 main = do
@@ -57,7 +63,9 @@ main = do
     modMask = mod4Mask,
 
     -- Basic Configuration
-    focusedBorderColor = myFocusedBorderColor
+    focusedBorderColor = myFocusedBorderColor,
+    normalBorderColor = myNormalBorderColor
+    --workspaces = ["shell", "web", "emacs", "empty"]
   } `additionalKeys` [ 
       -- Launching Applications
       ((mod4Mask, xK_w), safeSpawnProg myWebBrowser),
@@ -70,6 +78,7 @@ main = do
       ((mod4Mask .|. shiftMask, xK_z), unsafeSpawn myLockCommand),
       -- Screen Shot
       ((0, xK_Print), unsafeSpawn makeScreenShot),
+      ((controlMask, xK_Print), unsafeSpawn makeWindowScreenShot),
       -- Volume Control
       ((mod4Mask .|. shiftMask, xK_m), unsafeSpawn myMute),
       ((mod4Mask .|. shiftMask, xK_u), unsafeSpawn myUnmute),
@@ -77,5 +86,7 @@ main = do
       ((mod4Mask, xK_Down), unsafeSpawn myLowerVolume),
       -- Background commands
       ((mod4Mask, xK_s), unsafeSpawn resetBackground),
-      ((mod4Mask .|. controlMask, xK_x), unsafeSpawn slideShow)
+      ((mod4Mask .|. controlMask, xK_s), unsafeSpawn crazyBackground),
+      ((mod4Mask .|. controlMask, xK_z), unsafeSpawn windowedSlideShow),
+      ((mod4Mask .|. controlMask, xK_x), unsafeSpawn backgroundSlideShow)
     ]
