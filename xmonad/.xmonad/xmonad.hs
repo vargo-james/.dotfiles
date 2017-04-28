@@ -31,7 +31,6 @@ myLowerVolume = setVolume ++ "10%-"
 resetBackground = "default-bg"
 crazyBackground = "crazy-bg"
 backgroundSlideShow = "random-slides ~/.extras/curves"
-windowedSlideShow = "feh -F --auto-zoom -D 5 --randomize ~/.extras/curves/"
 
 -- Hooks
 myLogHook handle = dynamicLogWithPP xmobarPP {
@@ -87,6 +86,5 @@ main = do
       -- Background commands
       ((mod4Mask, xK_s), unsafeSpawn resetBackground),
       ((mod4Mask .|. controlMask, xK_s), unsafeSpawn crazyBackground),
-      ((mod4Mask .|. controlMask, xK_z), unsafeSpawn windowedSlideShow),
       ((mod4Mask .|. controlMask, xK_x), unsafeSpawn backgroundSlideShow)
     ]
