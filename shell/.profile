@@ -21,7 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-CDPATH=".:~/projects"
+export CDPATH=".:~/projects"
 
 export CPATH='/usr/local/boost_1_60_0'
 export LIBRARY_PATH='/usr/local/boost_1_60_0/stage/lib':$LIBRARY_PATH

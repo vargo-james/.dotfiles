@@ -6,9 +6,7 @@ set nocompatible
 runtime! ftplugin/man.vim
 
 "Set the tabs to be 2 spaces
-set expandtab
-set tabstop=2
-set shiftwidth=2
+set expandtab tabstop=2 shiftwidth=1
 "Set the line width to 79 characters
 set colorcolumn=80
 highlight ColorColumn ctermbg=green
@@ -93,12 +91,10 @@ set breakindentopt=shift:2,min:40
 " Allow % toggling between <,>
 set matchpairs+=<:>
 
+set timeoutlen=100
 " Remappings
 " Don't use Ex mode, use Q for formatting. use gQ for ex mode
 map Q gq
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
 
 " Toggle relative line numbering
 nnoremap R :set nu!<CR>:set rnu!<CR>
@@ -114,6 +110,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+inoremap jk <ESC>
+inoremap <C-a> <ESC>0i
+inoremap <C-e> <ESC>$a
+inoremap <C-u> <ESC>ld0i
+inoremap <C-k> <ESC>ld$i
 "
 "
 "

@@ -11,7 +11,7 @@ Config { font = "xft:White Rabbit:size=12",
     ] 10,
     Run Memory ["-t","Mem:<usedratio>%", "-p", "3"] 10,
     Run Swap ["-t", "Swap:<usedratio>%", "-p", "2"] 10,
-    Run Date "%a %b %_d %H:%M" "date" 600,
+    Run Date "%a %b %_d %I:%M %P" "date" 600,
     Run BatteryP ["BAT0"] [
       "-t", "<acstatus>",
       "-L", "15", "-H", "80",

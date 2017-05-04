@@ -46,7 +46,7 @@ myLogHook handle = dynamicLogWithPP xmobarPP {
 -- Window padding
 -- Layout Hook
 myLayoutHook = avoidStruts . spacing padding . layoutHook
-  where padding = 15
+  where padding = 0
 
 
 main = do
