@@ -1,5 +1,8 @@
 
 (use-package magit
+  :init
+  (my-generic-define-key :infix "m"
+                         "s" #'magit-status)
   :config
   ;; (evil-set-initial-state 'magit-mode 'normal)
   ;; (evil-set-initial-state 'magit-status-mode 'normal)
