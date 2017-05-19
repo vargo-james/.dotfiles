@@ -6,6 +6,7 @@ import XMonad.Util.Run
 import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Prompt
 import XMonad.Actions.Search
+import XMonad.Actions.WindowGo (runOrRaise)
 import System.IO
 
 myFocusedBorderColor = "#00AA00" -- Green
@@ -13,6 +14,7 @@ myNormalBorderColor = "#000000" -- Black
 
 -- Apps
 myWebBrowser = "firefox-esr"
+myAnnoyingLoop = "cvlc --no-video nyan.mp3 --loop"
 private = "-private-window"
 myEmacs = "emacs"
 -- Screenshot
@@ -48,6 +50,11 @@ myLogHook handle = dynamicLogWithPP xmobarPP {
 myLayoutHook = avoidStruts . spacing padding . layoutHook
   where padding = 0
 
+-- Startup Hook
+myStartupHook :: X()
+myStartupHook = do {
+  runOrRaise myEmacs (className =? "Emacs")
+  }
 
 main = do
   xmproc <- spawnPipe "xmobar"
@@ -58,6 +65,8 @@ main = do
     layoutHook = myLayoutHook defaultConfig,
     --layoutHook = spacing padding $ (avoidStruts  $ layoutHook defaultConfig),
     logHook = myLogHook xmproc,
+    --launch emacs at startup
+    startupHook = myStartupHook,
     -- Rebind the mod key to the super key
     modMask = mod4Mask,
 
@@ -67,6 +76,7 @@ main = do
     --workspaces = ["shell", "web", "emacs", "empty"]
   } `additionalKeys` [ 
       -- Launching Applications
+      ((mod4Mask, xK_h), spawn myAnnoyingLoop),
       ((mod4Mask, xK_w), safeSpawnProg myWebBrowser),
       ((mod4Mask .|. shiftMask, xK_w), safeSpawn myWebBrowser [private]),
       ((mod4Mask, xK_e), safeSpawnProg myEmacs),

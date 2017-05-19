@@ -91,7 +91,7 @@ set breakindentopt=shift:2,min:40
 " Allow % toggling between <,>
 set matchpairs+=<:>
 
-set timeoutlen=100
+set timeoutlen=200
 " Remappings
 " Don't use Ex mode, use Q for formatting. use gQ for ex mode
 map Q gq

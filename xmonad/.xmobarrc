@@ -1,9 +1,9 @@
-Config { font = "xft:White Rabbit:size=12",
+Config { font = "xft:Inconsolata:size=14",
   border = NoBorder,
   bgColor = "black",
   fgColor = "purple",
   position = TopW L 100,
-  commands = [ 
+  commands = [
     Run Network "wlan0" ["-t","<dev>: <rx> KB, <tx> KB"] 10,
     Run Cpu [
       "-t", "Cpu:<total>%", "-p", "3", "-L", "3", "-H", "50",
@@ -25,5 +25,3 @@ Config { font = "xft:White Rabbit:size=12",
   template = "%StdinReader% | %cpu% | %memory% * %swap% | %wlan0% }\
                 \{ %battery% | %date%"
 }
-
-
